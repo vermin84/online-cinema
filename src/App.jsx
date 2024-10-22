@@ -11,6 +11,7 @@ import MainProvider from './services/MainProvider'
 import SearchResults from './pages/SearchResults'
 import Actor from './pages/Actor'
 import Genre from './pages/Genre'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/genre/:genreId" element={<Genre />} />
             <Route path="/actor/:actorName" element={<Actor />} />
             <Route path="/discovery" element={<Discovery />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>

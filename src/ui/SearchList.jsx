@@ -4,7 +4,8 @@ import { styled } from 'styled-components'
 const StyledWrapper = styled.div`
   position: absolute;
   z-index: 5;
-  top: calc(100% + '15px');
+
+  top: 100%;
   right: 0;
   padding: 1rem 0.5rem;
   background: hsla(0, 0%, 0%, 0.65);

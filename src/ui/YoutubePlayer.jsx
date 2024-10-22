@@ -22,7 +22,7 @@ function YoutubePlayer({ videoId: movieId }) {
 
   useEffect(() => {
     async function fetchTrailer() {
-      const url = `http://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${key}`
+      const url = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${key}`
       const response = await fetch(url)
       const data = await response.json()
       const trailer = data.results.find(

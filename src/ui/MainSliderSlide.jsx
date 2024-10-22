@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { styled } from 'styled-components'
 import usePopularGenre from '../genres/usePopularGenre'
 
@@ -5,7 +6,7 @@ import Heading from './Heading'
 import Loader from './loader'
 const baseUrl = 'https://image.tmdb.org/t/p/'
 const size = 'w200'
-const StyledSlide = styled.div`
+const StyledSlide = styled(NavLink)`
   position: relative;
   z-index: 2;
   padding: 2rem 2.5rem;
@@ -40,7 +41,7 @@ function MainSliderSlide({ data }) {
   }
 
   return (
-    <StyledSlide>
+    <StyledSlide to={`/movie/${data.id}`}>
       <StyledImg src={`${baseUrl}${size}${data.poster_path}`} />
       <StyledContainer>
         <Heading as={'h2'}>{data.title}</Heading>
