@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { useParams } from 'react-router-dom'
-import { styled } from 'styled-components'
+
 import { getMovies } from '../services/GenreService'
 import GridContainer from '../ui/GridContainer'
 import Loader from '../ui/loader'

@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 export const key = '7788e3316511533eb7faf40b8fe0a13a'
 export const URL = 'https://api.themoviedb.org'
 export const token =

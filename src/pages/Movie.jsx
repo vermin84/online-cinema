@@ -62,14 +62,14 @@ function Movie() {
 
   const baseUrl = 'https://image.tmdb.org/t/p/'
   if (isLoading) return <div>Loading...</div>
-  const { title, release_date, imdb_id, poster_path, backdrop_path } = data
+  const { title, poster_path } = data
 
   return (
     <StyledMovieContainer>
       <Heading as="h1">{title}</Heading>
       <StyledContainer>
         <StyledImg>
-          <img src={`${baseUrl}w400${poster_path}`} />
+          <img src={`${baseUrl}w400${poster_path}`} alt="poster" />
         </StyledImg>
 
         <StyledOverview>

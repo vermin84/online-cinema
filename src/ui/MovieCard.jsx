@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import { styled } from 'styled-components'
-import { motion } from 'framer-motion'
 
 const StyledLink = styled(NavLink)`
   overflow: hidden;

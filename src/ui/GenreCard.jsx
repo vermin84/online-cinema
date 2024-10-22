@@ -31,7 +31,7 @@ const StyledCard = styled(NavLink)`
 `
 
 function GenreCard({ genre }) {
-  const { data, isLoading } = useGetGenreImage(genre.id)
+  const { data } = useGetGenreImage(genre.id)
 
   //if (isLoading) return <div>loading...</div>
   return (
