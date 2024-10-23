@@ -4,7 +4,7 @@ import { useGetPopularMovies } from '../hooks/useGetPopularMovies'
 import ActorCard from '../ui/ActorCard'
 import GridContainer from '../ui/GridContainer'
 import Heading from '../ui/Heading'
-import Loader from '../ui/loader'
+import Loader from '../ui/Loader'
 import MovieCard from '../ui/MovieCard'
 
 const StyledPage = styled.div`
