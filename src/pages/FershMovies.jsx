@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 import { useLatestMovies } from '../hooks/useLatestMovies'
 import GridContainer from '../ui/GridContainer'
 import Heading from '../ui/Heading'
-import Loader from '../ui/loader'
+import Loader from '../ui/Loader'
 import MovieCard from '../ui/MovieCard'
 
 const StyledContainer = styled.div`
