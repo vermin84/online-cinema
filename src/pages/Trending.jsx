@@ -22,7 +22,7 @@ function Trending() {
   if (isLoading && isActorsLoading) return <StyledPage>Loading...</StyledPage>
   return (
     <StyledPage>
-      <Heading as="h2">Trending Now</Heading>
+      <Heading as="h2">Trending</Heading>
       {isLoading ? (
         <Loader />
       ) : (

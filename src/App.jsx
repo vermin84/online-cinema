@@ -1,4 +1,9 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import {
+  HashRouter as BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+} from 'react-router-dom'
 import GlobalStyle from './styles/GlobalStyle'
 import AppLayout from './ui/AppLayout'
 import { lazy, Suspense } from 'react'
