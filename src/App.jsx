@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import GlobalStyle from './styles/GlobalStyle'
 import AppLayout from './ui/AppLayout'
 import { lazy, Suspense } from 'react'
-import Loader from './ui/loader'
+import Loader from './ui/Loader'
 const Home = lazy(() => import('./pages/Home'))
 const FreshMovies = lazy(() => import('./pages/FershMovies'))
 const Movie = lazy(() => import('./pages/Movie'))
