@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 
 import { getMovies } from '../services/GenreService'
 import GridContainer from '../ui/GridContainer'
-import Loader from '../ui/loader'
+import Loader from '../ui/Loader'
 import MovieCard from '../ui/MovieCard'
 
 function SearchResults() {
