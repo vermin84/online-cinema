@@ -3,7 +3,7 @@ import { styled } from 'styled-components'
 import usePopularGenre from '../genres/usePopularGenre'
 
 import Heading from './Heading'
-import Loader from './loader'
+import Loader from './Loader'
 const baseUrl = 'https://image.tmdb.org/t/p/'
 const size = 'w200'
 const StyledSlide = styled(NavLink)`

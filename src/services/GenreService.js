@@ -1,7 +1,7 @@
-export const key = '7788e3316511533eb7faf40b8fe0a13a'
+export const key = import.meta.env.VITE_API_KEY
+
 export const URL = 'https://api.themoviedb.org'
-export const token =
-  'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3Nzg4ZTMzMTY1MTE1MzNlYjdmYWY0MGI4ZmUwYTEzYSIsInN1YiI6IjY1ZjZjZDdjODFkYTM5MDE4NjYyYzY1OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vxbCnn7I_gjTTdETYUnvDqu0jhouTagOSEnWY1bCa0M'
+
 //search all genres of movies
 export async function fetchMovieGenres() {
   const apiUrl = `${URL}/3/genre/movie/list?api_key=${key}`
@@ -86,7 +86,7 @@ async function searchActor(actorName) {
 }
 
 //get actor ID by actor name
-async function searchActorId(actorName) {
+/*async function searchActorId(actorName) {
   const url = `https://api.themoviedb.org/3/search/person?api_key=${key}&query=${encodeURIComponent(
     actorName
   )}&include_adult=false`
@@ -99,7 +99,7 @@ async function searchActorId(actorName) {
     console.error('Error searching for actor:', error)
     return null
   }
-}
+}*/
 //search actors details
 async function getActorDetails(actorId) {
   const detailsUrl = `https://api.themoviedb.org/3/person/${actorId}?api_key=${key}&language=en-US`

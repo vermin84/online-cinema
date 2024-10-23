@@ -1,7 +1,6 @@
 import { styled } from 'styled-components'
 import { useAtom } from 'jotai'
 import { burgerMenuAtom } from '../features/atoms'
-import usePopularGenre from '../genres/usePopularGenre'
 
 import MenuList from './MenuList'
 import { NavLinks } from './NavList'
@@ -36,7 +35,7 @@ const StyledNavigation = styled.aside`
 
 export default function Navigation() {
   const [isMenuOpen] = useAtom(burgerMenuAtom)
-  const genres = { title: 'Genres', items: [] }
+
   //const { data, isLoading } = usePopularGenre()
 
   /*if (data) {
@@ -49,7 +48,6 @@ export default function Navigation() {
   return (
     <StyledNavigation className={isMenuOpen ? 'menu-open' : ''}>
       <MenuList data={NavLinks} />
-      {/*genres.items.length && <MenuList data={genres} />*/}
     </StyledNavigation>
   )
 }

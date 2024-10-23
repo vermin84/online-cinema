@@ -10,7 +10,7 @@ import 'swiper/css/bundle'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 import 'swiper/css/effect-fade'
-import Loader from './loader'
+import Loader from './Loader'
 
 function MainSlider() {
   const { data, isLoading } = useNewestMovie()

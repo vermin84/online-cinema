@@ -10,7 +10,7 @@ const StyledSearch = styled.form`
   position: relative;
 `
 function Search({ placeholder }) {
-  const { data, isSuccess, handleSearch, handleCrear, search } = useSearch()
+  const { data, handleSearch, handleCrear, search } = useSearch()
   const navigate = useNavigate()
 
   function searchAll(e) {
